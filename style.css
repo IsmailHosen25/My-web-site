@@ -24,6 +24,7 @@ html{
 }
 body{
    background-color: var(--bg-color);
+   scroll-behavior: smooth;
 }
 body.dark-theme{
     --active-color:#6858CF;
@@ -34,6 +35,9 @@ body.dark-theme{
     --dark-gray:#fff;
     --light-gray:#fff;
     --social-media:#fff;
+}
+html{
+   scroll-behavior: smooth;
 }
 /* ***********************************Nav section Start********************************************* */
 header{
