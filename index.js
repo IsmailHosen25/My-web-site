@@ -44,3 +44,56 @@ darkthembtn.addEventListener("click",()=>{
     localStorage.setItem("selected-icon",getCurrentIcon())
 })
   ///////////////// Dark Them end//////////////////////////////////
+
+
+   ///////////////// skilles,exp: edu: start//////////////////////////////////
+   const skills=document.getElementById("Skills")
+   const exp=document.getElementById("exp")
+   const edu=document.getElementById("edu")
+   const skexedadded=document.getElementById("sed-add");
+      
+  skills.addEventListener("click",()=>{
+    skills.style.breakAfter.endsWith="80%"
+    skexedadded.innerHTML=` 
+    <div class="allabout">
+    <div class="one">
+        <h5>Web Develoment</h5>
+        <p>Frontend web develoment</p>
+    </div>
+    <div class="two">
+        <h5>Digital marketing</h5>
+        <p>social media markiting,content markiting and online advertising</p>
+    </div>
+    <div class="three">
+        <h5>Photography</h5>
+        <p>Macro photography, Travel photography</p>
+     </div>
+ </div> 
+    `})
+    exp.addEventListener("click",()=>{
+        skexedadded.innerHTML=` 
+        <div class="allabout">
+        <div class="one">
+           <h5>2023-Current</h5>
+           <p>Web devlopment traning at WEB-D</p>
+        </div>
+        <div class="two">
+          <h5>2022 - 2023</h5>
+          <p>Worked for GMM</p>
+        </div>
+       </div> 
+        `})
+        edu.addEventListener("click",()=>{
+            skexedadded.innerHTML=` 
+            <div class="allabout">
+            <div class="one">
+                <h5>2023-Current</h5>
+                <p>Studing B.sc in cse at IUB</p>
+            </div>
+            <div class="two">
+                <h5>2023-Current</h5>
+                <p>Digital marketing at ABCL IT</p>
+            </div>
+            </div> 
+            `})
+    ///////////////// skilles,exp: edu: endt//////////////////////////////////

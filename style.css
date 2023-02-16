@@ -204,6 +204,94 @@ header nav .nav-manu ul li a{
 /* *********************************** section-1 End********************************************* */
 
 
+/* *********************************** section-2 start********************************************* */
+.sec-2{
+   width:100%;
+   padding: 3rem 0rem;
+   overflow: hidden;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: var(--bg-color);
+}
+
+.sec-2 .in-sec2{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+}
+.sec-2 .in-sec2 .image{
+  width:35%;
+}
+.sec-2 .in-sec2 .image img{
+   width:100%;
+   border-radius: 15px;
+ }
+ .sec-2 .in-sec2 .content{
+   width: 60%;
+ }
+ .sec-2 .in-sec2 .content .about-para{
+   width: 100%;
+   height: 100%;
+   color:var(--para-color)
+ }
+ .sec-2 .in-sec2 .content .about-para h2{
+   font-size: 5rem;
+ }
+ .sec-2 .in-sec2 .content .about-para p{
+   font-size: 1.5rem;
+ }
+ .sec-2 .in-sec2 .content .sk-ex-ed ul{
+   padding: 1.5rem 0rem;
+   display: flex;
+   justify-content:flex-start;
+   align-items: center;
+   gap: 2rem;
+   list-style: none;
+ }
+ .sec-2 .in-sec2 .content .sk-ex-ed ul li a{
+  font-size: 1.4rem;
+  font-weight:700;
+  position: relative;
+  color:var(--para-color);
+  cursor: pointer;
+ }
+ .sec-2 .in-sec2 .content .sk-ex-ed ul li a::after{
+   content: "";
+   height: 3px;
+   position:absolute;
+   top:100%;
+   left: 0;
+   width: 0%;
+   background-color: #ff3838;
+   transition: width 0.3s linear;
+  }
+  .sec-2 .in-sec2 .content .sk-ex-ed ul li a:hover::after{
+   width: 80%;
+  }
+  .sec-2 .in-sec2 .content .sk-ex-ed .sed-add{
+    height: 18rem;
+    color:var(--para-color);
+  }
+  .sec-2 .in-sec2 .content .sk-ex-ed .sed-add .allabout{
+   font-size: 1.4rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: flex-start;
+   gap:1rem;
+
+  }
+  .sec-2 .in-sec2 .content .sk-ex-ed .sed-add .allabout h5{
+   color:#672E3C;
+   padding: 0.4rem 0rem;
+  }
+  .sec-2 .in-sec2 .content .sk-ex-ed .sed-add .allabout p{
+   color:var(--para-color);
+  }
+/* *********************************** section-2 End********************************************* */
+
 /* ************************************************************************************************** */
                                          /* Media Query*/
 /* *************************************************************************************************** */
@@ -285,6 +373,7 @@ header nav .nav-manu ul li a i{
  }
  .sec-1{
    height: auto;
+   overflow: hidden;
 
 }
  .sec-1{
@@ -317,6 +406,13 @@ header nav .nav-manu ul li a i{
    width:25rem;
    height: 25rem;
 }
+.sec-2 .in-sec2 .image{
+   width:70%;
+   margin-bottom: 2rem;
+ }
+ .sec-2 .in-sec2 .content{
+   width: 100%;
+ }
 }
 @media screen  and (max-width:480px){
     header nav .nav-manu ul{
@@ -338,4 +434,7 @@ header nav .nav-manu ul li a i{
       width: 20rem;
       height: 20rem;
      }
+     .sec-2 .in-sec2 .image{
+      width:100%;
+    }
 }
