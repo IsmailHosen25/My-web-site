@@ -345,7 +345,7 @@ header nav .nav-manu ul li a{
    transition: all 0.3s linear;
 }
 .sec-3 .in-sec3 .services .s-card:hover{
-   background-color: var(---services-hover);
+   background-color: var(--services-hover);
    transform: translateY(-10px);
 }
 .sec-3 .in-sec3 .services .s-card .logo i{
