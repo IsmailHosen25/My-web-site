@@ -378,6 +378,8 @@ header nav .nav-manu ul li a{
 
 }
 /* *********************************** section-3 End********************************************* */
+
+/* *********************************** section-4 start********************************************* */
 .sec-4{
    width: 100%;
    display: flex;
@@ -444,6 +446,167 @@ header nav .nav-manu ul li a{
    background-color: #fff;
    border-radius: 50%;
 }
+
+/* *********************************** section-4 End********************************************* */
+
+
+/* *********************************** section-5 start********************************************* */
+
+.sec-5{
+   width: 100%;
+   background-color: var(--bg-color);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 4rem 0rem;
+}
+.sec-5 .in-sec5{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+}
+.sec-5 .in-sec5 .left{
+   width: 48%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: flex-start;
+   gap:1.5rem;
+}
+.sec-5 .in-sec5 .left h1{
+   color: var(--para-color);
+   font-size: 4rem;
+}
+.sec-5 .in-sec5 .left .icon{
+   font-size: 1.5rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: flex-start;
+   gap: 1.2rem;
+   color: var(--para-color);
+}
+.sec-5 .in-sec5 .left .icon a i{
+   color: #fff;
+   padding: 0.8rem;
+   background-color: var(--darkandlight-color);
+   border-radius: 50%;
+}
+.sec-5 .in-sec5 .left .social-media-icon{
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   gap:1rem;
+}
+.sec-5 .in-sec5 .left .social-media-icon a{
+      color: var(--para-color);
+      font-size: 2.5rem;
+      padding: 0.5rem;
+      transition: all 0.3s linear;
+      border-radius: 50%;
+}
+.sec-5 .in-sec5 .left .social-media-icon a:hover{
+   color: var(--darkandlight-color);
+   transform: translateY(-3px);
+}
+.sec-5 .in-sec5 .right{
+   width: 48%;
+}
+
+.sec-5 .in-sec5 .left button{
+   padding: 1rem 3rem;
+   background-color: var(--darkandlight-color);
+   border: none;
+   color: #fff;
+   font-size: 1.8rem;
+   border-radius: 5px;
+   cursor: pointer;
+}
+.sec-5 .in-sec5 .right form{
+   width: 100%;
+   padding: 3rem;
+   background-color: var(--bg-color);
+   color: var(--para-color);
+   border: 2px solid var(--black-color);
+   border-radius: 5px;
+}
+.sec-5 .in-sec5 .right form h2{
+font-size: 3rem;
+font-weight: 500;
+color: var(--para-color);
+}
+
+                      /* *****************Input Box****************** */
+ .sec-5 .in-sec5 .right form .input-box{
+    background-color: var(--bg-color);
+    margin-top: 1rem;
+    width: 100%;
+    position: relative;
+}
+.sec-5 .in-sec5 .right form input,textarea{
+   background-color: var(--bg-color);
+}
+.sec-5 .in-sec5 .right form .input-box input , textarea{
+   width: 100%;
+   padding: 0.5rem 0;
+   font-size: 1.5rem;
+   margin:1rem 0 ;
+   border: none;
+   border-bottom:2px solid var(--black-color) ;
+   outline: none;
+   resize: none;
+}
+.sec-5 .in-sec5 .right form .input-box span{
+   position: absolute;
+   left: 0;
+   padding: 0.5rem 0;
+   font-size: 1.5rem;
+   margin:1rem 0 ;
+   pointer-events: none;
+   transition: 0.5s;
+   color:#666;
+}
+.sec-5 .in-sec5 .right form .input-box input:focus ~ span,
+.sec-5 .in-sec5 .right form .input-box input:valid ~ span{
+   font-size: 1.2rem;
+   color:#e91963;
+   transform: translateY(-20px);
+}
+.sec-5 .in-sec5 .right form .input-box textarea:focus ~ span,
+.sec-5 .in-sec5 .right form .input-box textarea:valid ~ span{
+   font-size: 1.2rem;
+    color:#e91963;
+    transform: translateY(-20px);
+}
+.sec-5 .in-sec5 .right form .submit-btn-box{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+                      /* *****************Submit Button****************** */
+
+
+.sec-5 .in-sec5 .right form .input-box input[type="submit"]{
+   width: 90%;
+   background-color: var(--darkandlight-color);
+   color: var(--bg-color);
+   border: none;
+   cursor: pointer;
+   padding: 1rem;
+   font-size: 1.5rem;
+   transition: all 0.3s linear;
+}
+.sec-5 .in-sec5 .right form .input-box input[type="submit"]:hover{
+   background-color: transparent;
+   outline: 1px solid var(--black-color);
+   color: var(--para-color);
+}
+
+
+/* *********************************** section-5 End********************************************* */
 /* ************************************************************************************************** */
                                          /* Media Query*/
 /* *************************************************************************************************** */
@@ -590,6 +753,13 @@ header nav .nav-manu ul li a i{
 }
 .sec-4 .in-sec4 .mywork-card .w-card{
    width: 75%;
+}
+.sec-5 .in-sec5 .left{
+   width: 100%;
+   margin-bottom: 2rem;
+}
+.sec-5 .in-sec5 .right{
+   width:100%;
 }
 }
 @media screen  and (max-width:480px){
