@@ -12,13 +12,12 @@ html{
     --bg-color:#fff;
     --black-color:#000;
     --header-color:#000;
+    --social-media:#6858CF;
     --para-color:#000;
     --dark-gray:#515253;
     --light-gray:#6a6a6b;
-    --social-media:#6858CF;
     --services-bg:#fff;
-    --services-hover:#fff;
-    --work-hover:#6858CF;
+    --darkandlight-color:#6858CF;
 
 }
 .inner{
@@ -30,7 +29,7 @@ body{
    scroll-behavior: smooth;
 }
 body.dark-theme{
-    --active-color:#6858CF;
+    --active-color:#ff004f;
     --bg-color:#000;
     --black-color:#fff;
     --header-color:#fff;
@@ -39,8 +38,7 @@ body.dark-theme{
     --light-gray:#fff;
     --social-media:#fff;
     --services-bg:#262626;
-    --services-hover:#ff004f;
-    --work-hover:#ff3838;
+    --darkandlight-color:#ff004f;
 }
 html{
    scroll-behavior: smooth;
@@ -68,7 +66,7 @@ header nav{
 header nav .name a{
     font-size: 2rem;
     text-decoration: none;
-    color: var(--header-color);
+    color: var(--darkandlight-color);
     position: relative;
 }
 header nav .nav-manu{
@@ -87,17 +85,17 @@ header nav .nav-manu ul li a{
     color: var(--para-color);
  }
  header nav .nav-manu ul li a:hover{
-    color: #6858CF;
+    color: var(--darkandlight-color);
  }
  header nav .nav-manu ul li .active{
-    color: #6858CF;
+    color: var(--darkandlight-color);
  }
  header nav .nav-manu ul li a i{
     display: none;
  }
  header nav .nav-manu > i{
     display: none;
-    color: var(--para-color);
+    color: var(--bg-color);
  }
  header nav .nav-icon{
     display: flex;
@@ -109,8 +107,8 @@ header nav .nav-manu ul li a{
     font-size: 2rem;
     cursor: pointer;
     margin-left: 2rem;
-    color:var(--black-color);
-    border: 1px solid #fff;
+    color:var(--active-color);
+    border: 1px solid var(--darkandlight-color);
     padding: 0.3rem 0.5rem;
  }
  header nav .nav-icon #nav-open{
@@ -197,7 +195,7 @@ header nav .nav-manu ul li a{
  .sec-1 .in-sec1 .content .para a{
    text-decoration: none;
     padding: 1rem 3rem;
-    background-color: #6858CF;
+    background-color: var(--darkandlight-color);
     border: none;
     color: #fff;
     font-size: 1.8rem;
@@ -345,17 +343,25 @@ header nav .nav-manu ul li a{
    transition: all 0.3s linear;
 }
 .sec-3 .in-sec3 .services .s-card:hover{
-   background-color: var(--services-hover);
+   background-color: var(--darkandlight-color);
    transform: translateY(-10px);
 }
 .sec-3 .in-sec3 .services .s-card .logo i{
    font-size: 3.4rem;
    color: var(--black-color);
 }
+.sec-3 .in-sec3 .services .s-card:hover .logo i{
+   color: #fff;
+
+}
 .sec-3 .in-sec3 .services .s-card .s-about{
    font-size: 1.3rem;
-   color: var(--para-color);
+   color:var(--para-color);
    padding:2rem 0rem ;
+}
+.sec-3 .in-sec3 .services .s-card:hover .s-about{
+   color: #fff;
+
 }
 .sec-3 .in-sec3 .services .s-card .s-about p{
    padding: 1.8rem 0rem;
@@ -366,6 +372,10 @@ header nav .nav-manu ul li a{
    color: var(--black-color);
    border-radius: 5px;
    cursor: pointer;
+}
+.sec-3 .in-sec3 .services .s-card:hover .s-about a{
+   color: #fff;
+
 }
 /* *********************************** section-3 End********************************************* */
 .sec-4{
@@ -405,7 +415,7 @@ header nav .nav-manu ul li a{
    bottom: 0;
    width: 100%;
    height: 0%;
-   background: linear-gradient(rgba(0,0,0,0.6),var(--work-hover));
+   background: linear-gradient(rgba(0,0,0,0.6),var(--darkandlight-color));
    border-radius: 10px;
    overflow: hidden;
    display: flex;
