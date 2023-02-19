@@ -487,6 +487,9 @@ header nav .nav-manu ul li a{
    gap: 1.2rem;
    color: var(--para-color);
 }
+.sec-5 .in-sec5 .left .icon a{
+   text-decoration: none;
+}
 .sec-5 .in-sec5 .left .icon a i{
    color: #fff;
    padding: 0.8rem;
@@ -604,9 +607,21 @@ color: var(--para-color);
    outline: 1px solid var(--black-color);
    color: var(--para-color);
 }
-
-
 /* *********************************** section-5 End********************************************* */
+/* *********************************** footer section start********************************************* */
+footer{
+   padding: 1.5rem 0rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 1.6rem;
+   background-color: var(--darkandlight-color);
+   color: #fff;
+   text-align: center;
+}
+
+/* *********************************** footer section End********************************************* */
+
 /* ************************************************************************************************** */
                                          /* Media Query*/
 /* *************************************************************************************************** */
@@ -760,6 +775,9 @@ header nav .nav-manu ul li a i{
 }
 .sec-5 .in-sec5 .right{
    width:100%;
+}
+footer{
+padding: 1.5rem 0rem 6rem 0rem;
 }
 }
 @media screen  and (max-width:480px){
