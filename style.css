@@ -16,6 +16,8 @@ html{
     --dark-gray:#515253;
     --light-gray:#6a6a6b;
     --social-media:#6858CF;
+    --services-bg:#fff;
+    ---services-hover:#fff;
 
 }
 .inner{
@@ -35,6 +37,8 @@ body.dark-theme{
     --dark-gray:#fff;
     --light-gray:#fff;
     --social-media:#fff;
+    --services-bg:#262626;
+    ---services-hover:#ff004f;
 }
 html{
    scroll-behavior: smooth;
@@ -242,6 +246,9 @@ header nav .nav-manu ul li a{
  }
  .sec-2 .in-sec2 .content .about-para h2{
    font-size: 5rem;
+   position: relative;
+   display: inline;
+   padding-bottom:0.8rem ;
  }
  .sec-2 .in-sec2 .content .about-para p{
    font-size: 1.5rem;
@@ -261,18 +268,25 @@ header nav .nav-manu ul li a{
   color:var(--para-color);
   cursor: pointer;
  }
- .sec-2 .in-sec2 .content .sk-ex-ed ul li a::after{
+ .sec-2 .in-sec2 .content .sk-ex-ed ul li .link::after{
    content: "";
-   height: 3px;
+   height: 2px;
    position:absolute;
    top:100%;
    left: 0;
    width: 0%;
    background-color: #ff3838;
-   transition: width 0.3s linear;
-  }
-  .sec-2 .in-sec2 .content .sk-ex-ed ul li a:hover::after{
-   width: 80%;
+   transition: all 0.3s linear;
+ }
+ .sec-2 .in-sec2 .content .sk-ex-ed ul li .active::after{
+   content: "";
+   height: 3px;
+   position:absolute;
+   top:100%;
+   left: 0;
+   width: 70%;
+   background-color: #ff3838;
+
   }
   .sec-2 .in-sec2 .content .sk-ex-ed .sed-add{
     height: 18rem;
@@ -296,6 +310,63 @@ header nav .nav-manu ul li a{
   }
 /* *********************************** section-2 End********************************************* */
 
+
+/* *********************************** section-3 start********************************************* */
+.sec-3{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+   padding: 2rem 0rem;
+   background-color: var(--bg-color);
+}
+.sec-3 .in-sec3 .heading{
+   font-size: 3rem;
+   padding: 1rem 0rem;
+   color: var(--para-color);
+}
+.sec-3 .in-sec3 .services{
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+}
+.sec-3 .in-sec3 .services .s-card{
+   width: 30%;
+   height: 23rem;
+   box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
+   border-radius: 10px;
+   padding: 2.5rem ;
+   background-color:var(--services-bg) ;
+   transition: all 0.3s linear;
+}
+.sec-3 .in-sec3 .services .s-card:hover{
+   background-color: var(---services-hover);
+   transform: translateY(-10px);
+}
+.sec-3 .in-sec3 .services .s-card .logo i{
+   font-size: 3.4rem;
+   color: var(--black-color);
+}
+.sec-3 .in-sec3 .services .s-card .s-about{
+   font-size: 1.3rem;
+   color: var(--para-color);
+   padding:2rem 0rem ;
+}
+.sec-3 .in-sec3 .services .s-card .s-about p{
+   padding: 1.8rem 0rem;
+}
+.sec-3 .in-sec3 .services .s-card .s-about a{
+   text-decoration: none;
+   border: none;
+   color: var(--black-color);
+   border-radius: 5px;
+   cursor: pointer;
+}
+/* *********************************** section-3 End********************************************* */
+
 /* ************************************************************************************************** */
                                          /* Media Query*/
 /* *************************************************************************************************** */
@@ -307,6 +378,9 @@ header nav .nav-manu ul li a{
       width:30rem;
       height: 30rem;
       border-radius: 50%;
+   }
+   .sec-3 .in-sec3 .services .s-card{
+      width: 32%;
    }
 }
 @media screen  and (max-width:1024px){
@@ -328,6 +402,13 @@ header nav .nav-manu ul li a{
       width:28rem;
       height: 28rem;
       border-radius: 50%;
+   }
+   .sec-3 .in-sec3 .services{
+      justify-content: space-evenly;
+   }
+   .sec-3 .in-sec3 .services .s-card{
+      width: 48%;
+      margin-bottom: 1.5rem;
    }
 }
 @media screen  and (max-width:768px){
@@ -417,6 +498,12 @@ header nav .nav-manu ul li a i{
  .sec-2 .in-sec2 .content{
    width: 100%;
  }
+ .sec-3 .in-sec3 .services{
+   gap: 1.3rem;
+ }
+ .sec-3 .in-sec3 .services .s-card{
+   width: 100%;
+}
 }
 @media screen  and (max-width:480px){
     header nav .nav-manu ul{
@@ -440,5 +527,9 @@ header nav .nav-manu ul li a i{
      }
      .sec-2 .in-sec2 .image{
       width:100%;
+    }
+    .sec-3 .in-sec3 .services .s-card{
+      height: 26rem;
+      gap: 1.3rem;
     }
 }

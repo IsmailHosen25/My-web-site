@@ -53,6 +53,9 @@ darkthembtn.addEventListener("click",()=>{
    const skexedadded=document.getElementById("sed-add");
       
   skills.addEventListener("click",()=>{
+    skills.classList.toggle('active')
+    exp.classList.remove('active')
+    edu.classList.remove('active')
     skills.style.breakAfter.endsWith="80%"
     skexedadded.innerHTML=` 
     <div class="allabout">
@@ -71,6 +74,9 @@ darkthembtn.addEventListener("click",()=>{
  </div> 
     `})
     exp.addEventListener("click",()=>{
+        exp.classList.toggle('active')
+        edu.classList.remove('active')
+        skills.classList.remove('active')
         skexedadded.innerHTML=` 
         <div class="allabout">
         <div class="one">
@@ -84,6 +90,9 @@ darkthembtn.addEventListener("click",()=>{
        </div> 
         `})
         edu.addEventListener("click",()=>{
+            edu.classList.toggle('active')
+            exp.classList.remove('active')
+            skills.classList.remove('active')
             skexedadded.innerHTML=` 
             <div class="allabout">
             <div class="one">
