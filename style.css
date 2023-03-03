@@ -95,7 +95,7 @@ header nav .nav-manu ul li a{
  }
  header nav .nav-manu > i{
     display: none;
-    color: var(--bg-color);
+    color: var(--para-color);
  }
  header nav .nav-icon{
     display: flex;
@@ -410,6 +410,7 @@ header nav .nav-manu ul li a{
 .sec-4 .in-sec4 .mywork-card .w-card img{
    width: 100%;
    height: 38rem;
+   transition: all 0.3s linear;
 }
 .sec-4 .in-sec4 .mywork-card .w-card .w-about{
    position: absolute;
@@ -430,6 +431,9 @@ header nav .nav-manu ul li a{
 }
 .sec-4 .in-sec4 .mywork-card .w-card:hover .w-about{
    height: 100%;
+}
+.sec-4 .in-sec4 .mywork-card .w-card:hover img{
+   transform: scale(1.2);
 }
 .sec-4 .in-sec4 .mywork-card .w-card .w-about h3{
    font-size: 2rem;
