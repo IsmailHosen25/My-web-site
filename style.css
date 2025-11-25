@@ -326,56 +326,34 @@ header nav .nav-manu ul li a{
    padding: 1rem 0rem;
    color: var(--para-color);
 }
-.sec-3 .in-sec3 .services{
+.sec-3 .in-sec3 .skills{
    width: 100%;
    display: flex;
-   justify-content: space-between;
-   align-items: center;
+   justify-content:flex-start;
+   align-items:center;
    flex-wrap: wrap;
+   gap:1rem;
 }
-.sec-3 .in-sec3 .services .s-card{
-   width: 30%;
-   height: 23rem;
+.sec-3 .in-sec3 .skills .s-card{
+   width: 10%;
+   height: 6rem;
    box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
    border-radius: 10px;
-   padding: 2.5rem ;
+   padding: 2rem;
    background-color:var(--services-bg) ;
    transition: all 0.3s linear;
+   display: flex;
+   justify-content:center;
+   align-items:center;
 }
-.sec-3 .in-sec3 .services .s-card:hover{
-   background-color: var(--darkandlight-color);
-   transform: translateY(-10px);
+.sec-3 .in-sec3 .skills .s-card img{
+   width:5rem;
 }
-.sec-3 .in-sec3 .services .s-card .logo i{
-   font-size: 3.4rem;
-   color: var(--black-color);
+.sec-3 .in-sec3 .skills .javascript{
+   width:9rem;
 }
-.sec-3 .in-sec3 .services .s-card:hover .logo i{
-   color: #fff;
-
-}
-.sec-3 .in-sec3 .services .s-card .s-about{
-   font-size: 1.3rem;
-   color:var(--para-color);
-   padding:2rem 0rem ;
-}
-.sec-3 .in-sec3 .services .s-card:hover .s-about{
-   color: #fff;
-
-}
-.sec-3 .in-sec3 .services .s-card .s-about p{
-   padding: 1.8rem 0rem;
-}
-.sec-3 .in-sec3 .services .s-card .s-about a{
-   text-decoration: none;
-   border: none;
-   color: var(--black-color);
-   border-radius: 5px;
-   cursor: pointer;
-}
-.sec-3 .in-sec3 .services .s-card:hover .s-about a{
-   color: #fff;
-
+.sec-3 .in-sec3 .skills .exceptionLogo{
+   width: 12%;
 }
 /* *********************************** section-3 End********************************************* */
 
@@ -400,63 +378,115 @@ header nav .nav-manu ul li a{
    justify-content: space-between;
    align-items: center;
    flex-wrap: wrap;
+   gap:2rem;
 }
 .sec-4 .in-sec4 .mywork-card .w-card{
-   width: 31%;
+   width: 32%;
    border-radius: 10px;
+   border:var(--darkandlight-color) 2px solid;
    position: relative;
    overflow: hidden;
 }
 .sec-4 .in-sec4 .mywork-card .w-card img{
    width: 100%;
-   height: 38rem;
+   height: 22rem;
    transition: all 0.3s linear;
 }
 .sec-4 .in-sec4 .mywork-card .w-card .w-about{
-   position: absolute;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   height: 0%;
-   background: linear-gradient(rgba(0,0,0,0.6),var(--darkandlight-color));
-   border-radius: 10px;
-   overflow: hidden;
+   padding: 1rem;
    display: flex;
-   flex-direction: column;
+   justify-content: space-between;
    align-items: center;
-   justify-content: center;
-   color: #fff;
-   padding: 0rem 1.5rem;
-   transition: all 0.3s linear;
-}
-.sec-4 .in-sec4 .mywork-card .w-card:hover .w-about{
-   height: 100%;
-}
-.sec-4 .in-sec4 .mywork-card .w-card:hover img{
-   transform: scale(1.2);
-}
-.sec-4 .in-sec4 .mywork-card .w-card .w-about h3{
-   font-size: 2rem;
-}
-.sec-4 .in-sec4 .mywork-card .w-card .w-about p{
-   font-size: 1.6rem;
-   padding: 1rem 0rem;
-   text-align: center;
+   font-size: 1.5rem;
+   color: var(--para-color);
 }
 .sec-4 .in-sec4 .mywork-card .w-card .w-about a{
-   font-size: 1.8rem;
-   color: #000;
-   padding: 1.5rem;
-   background-color: #fff;
-   border-radius: 50%;
+   border: 2px solid var(--para-color);
+   padding: 0.5rem 0.8rem;
+   border-radius: 5px;
+   text-decoration: none;
+   color: var(--para-color);
 }
 
 /* *********************************** section-4 End********************************************* */
 
-
 /* *********************************** section-5 start********************************************* */
-
 .sec-5{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+   padding: 2rem 0rem;
+   background-color: var(--bg-color);
+}
+.sec-5 .in-sec5 .heading{
+   font-size: 3rem;
+   padding: 1rem 0rem;
+   color: var(--para-color);
+}
+.sec-5 .in-sec5 .mywork-card{
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+   gap:4rem;
+}
+.sec-5 .in-sec5 .mywork-card .w-card{
+   width: 30%;
+}
+.sec-5 .in-sec5 .mywork-card .w-card img{
+   width: 100%;
+   height: 25rem;
+   box-shadow: 0 -1px 10px rgba(0, 0, 0, .15);
+   /* border: 0px solid var(--para-color); */
+   border-radius: 5px ;
+}
+/* *********************************** section-5 end********************************************* */
+
+
+/* *********************************** section-6 start********************************************* */
+.sec-6{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+   padding: 2rem 0rem;
+   background-color: var(--bg-color);
+}
+.sec-6 .in-sec6 .heading{
+   font-size: 3rem;
+   padding: 1rem 0rem;
+   color: var(--para-color);
+}
+.sec-6 .in-sec6 .mywork-card{
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+   gap:1rem;
+}
+.sec-6 .in-sec6 .mywork-card .w-card{
+   width: 32%;
+   /* height: 25rem; */
+}
+.sec-6 .in-sec6 .mywork-card .w-card img{
+   width: 100%;
+   box-shadow: 0 -1px 10px rgba(0, 0, 0, .15);
+   /* border: 0px solid var(--para-color); */
+   /* border-radius: 5px ; */
+}
+/* *********************************** section-6 end********************************************* */
+
+
+
+
+/* *********************************** section-7 start********************************************* */
+
+.sec-7{
    width: 100%;
    background-color: var(--bg-color);
    display: flex;
@@ -464,13 +494,13 @@ header nav .nav-manu ul li a{
    align-items: center;
    padding: 4rem 0rem;
 }
-.sec-5 .in-sec5{
+.sec-7 .in-sec7{
    display: flex;
    justify-content: space-between;
-   align-items: center;
+   align-items: flex-start;
    flex-wrap: wrap;
 }
-.sec-5 .in-sec5 .left{
+.sec-7 .in-sec7 .left{
    width: 48%;
    display: flex;
    flex-direction: column;
@@ -478,11 +508,11 @@ header nav .nav-manu ul li a{
    align-items: flex-start;
    gap:1.5rem;
 }
-.sec-5 .in-sec5 .left h1{
+.sec-7 .in-sec7 .left h1{
    color: var(--para-color);
    font-size: 4rem;
 }
-.sec-5 .in-sec5 .left .icon{
+.sec-7 .in-sec7 .left .icon{
    font-size: 1.5rem;
    display: flex;
    flex-direction: column;
@@ -491,46 +521,51 @@ header nav .nav-manu ul li a{
    gap: 1.2rem;
    color: var(--para-color);
 }
-.sec-5 .in-sec5 .left .icon a{
+.sec-7 .in-sec7 .left .icon a{
    text-decoration: none;
+   color: var(--para-color);
 }
-.sec-5 .in-sec5 .left .icon a i{
+.sec-7 .in-sec7 .left .icon a i{
    color: #fff;
    padding: 0.8rem;
    background-color: var(--darkandlight-color);
    border-radius: 50%;
 }
-.sec-5 .in-sec5 .left .social-media-icon{
+.sec-7 .in-sec7 .left .social-media-icon{
    display: flex;
    justify-content: flex-start;
    align-items: center;
    gap:1rem;
 }
-.sec-5 .in-sec5 .left .social-media-icon a{
+.sec-7 .in-sec7 .left .social-media-icon a{
       color: var(--para-color);
       font-size: 2.5rem;
       padding: 0.5rem;
       transition: all 0.3s linear;
       border-radius: 50%;
 }
-.sec-5 .in-sec5 .left .social-media-icon a:hover{
+.sec-7 .in-sec7 .left .social-media-icon a:hover{
    color: var(--darkandlight-color);
    transform: translateY(-3px);
 }
-.sec-5 .in-sec5 .right{
+.sec-7 .in-sec7 .right{
    width: 48%;
 }
 
-.sec-5 .in-sec5 .left button{
+.sec-7 .in-sec7 .left button{
    padding: 1rem 3rem;
-   background-color: var(--darkandlight-color);
    border: none;
+   border-radius: 5px;
+   background-color: var(--darkandlight-color);
+
+}
+.sec-7 .in-sec7 .left button a{
    color: #fff;
    font-size: 1.8rem;
-   border-radius: 5px;
    cursor: pointer;
+   text-decoration: none;
 }
-.sec-5 .in-sec5 .right form{
+.sec-7 .in-sec7 .right form{
    width: 100%;
    padding: 3rem;
    background-color: var(--bg-color);
@@ -538,23 +573,23 @@ header nav .nav-manu ul li a{
    border: 2px solid var(--black-color);
    border-radius: 5px;
 }
-.sec-5 .in-sec5 .right form h2{
+.sec-7 .in-sec7 .right form h2{
 font-size: 3rem;
 font-weight: 500;
 color: var(--para-color);
 }
 
                       /* *****************Input Box****************** */
- .sec-5 .in-sec5 .right form .input-box{
+ .sec-7 .in-sec7 .right form .input-box{
     background-color: var(--bg-color);
     margin-top: 1rem;
     width: 100%;
     position: relative;
 }
-.sec-5 .in-sec5 .right form input,textarea{
+.sec-7 .in-sec7 .right form input,textarea{
    background-color: var(--bg-color);
 }
-.sec-5 .in-sec5 .right form .input-box input , textarea{
+.sec-7 .in-sec7 .right form .input-box input , textarea{
    width: 100%;
    padding: 0.5rem 0;
    font-size: 1.5rem;
@@ -564,7 +599,7 @@ color: var(--para-color);
    outline: none;
    resize: none;
 }
-.sec-5 .in-sec5 .right form .input-box span{
+.sec-7 .in-sec7 .right form .input-box span{
    position: absolute;
    left: 0;
    padding: 0.5rem 0;
@@ -574,19 +609,19 @@ color: var(--para-color);
    transition: 0.5s;
    color:#666;
 }
-.sec-5 .in-sec5 .right form .input-box input:focus ~ span,
-.sec-5 .in-sec5 .right form .input-box input:valid ~ span{
+.sec-7 .in-sec7 .right form .input-box input:focus ~ span,
+.sec-7 .in-sec7 .right form .input-box input:valid ~ span{
    font-size: 1.2rem;
    color:#e91963;
    transform: translateY(-20px);
 }
-.sec-5 .in-sec5 .right form .input-box textarea:focus ~ span,
-.sec-5 .in-sec5 .right form .input-box textarea:valid ~ span{
+.sec-7 .in-sec7 .right form .input-box textarea:focus ~ span,
+.sec-7 .in-sec7 .right form .input-box textarea:valid ~ span{
    font-size: 1.2rem;
     color:#e91963;
     transform: translateY(-20px);
 }
-.sec-5 .in-sec5 .right form .submit-btn-box{
+.sec-7 .in-sec7 .right form .submit-btn-box{
    display: flex;
    justify-content: center;
    align-items: center;
@@ -596,7 +631,7 @@ color: var(--para-color);
                       /* *****************Submit Button****************** */
 
 
-.sec-5 .in-sec5 .right form .input-box input[type="submit"]{
+.sec-7 .in-sec7 .right form .input-box input[type="submit"]{
    width: 90%;
    background-color: var(--darkandlight-color);
    color: var(--bg-color);
@@ -606,7 +641,7 @@ color: var(--para-color);
    font-size: 1.5rem;
    transition: all 0.3s linear;
 }
-.sec-5 .in-sec5 .right form .input-box input[type="submit"]:hover{
+.sec-7 .in-sec7 .right form .input-box input[type="submit"]:hover{
    background-color: transparent;
    outline: 1px solid var(--black-color);
    color: var(--para-color);
@@ -641,6 +676,9 @@ footer{
    .sec-3 .in-sec3 .services .s-card{
       width: 32%;
    }
+   .sec-5 .in-sec5 .mywork-card .w-card{
+   width: 40%;
+}
 }
 @media screen  and (max-width:1024px){
    .inner{
@@ -676,6 +714,8 @@ footer{
       width: 48%;
       margin-bottom: 1.5rem;
    }
+   .sec-5 .in-sec5 .mywork-card .w-card{
+   width: 40%;}
 }
 @media screen  and (max-width:768px){
  header{
@@ -773,12 +813,23 @@ header nav .nav-manu ul li a i{
 .sec-4 .in-sec4 .mywork-card .w-card{
    width: 75%;
 }
-.sec-5 .in-sec5 .left{
+.sec-7 .in-sec7 .left{
    width: 100%;
    margin-bottom: 2rem;
 }
-.sec-5 .in-sec5 .right{
+.sec-7 .in-sec7 .right{
    width:100%;
+}
+.sec-5 .in-sec5 .mywork-card .w-card{
+   width: 70%;
+}
+.sec-6 .in-sec6 .mywork-card{
+   justify-content:center;
+   align-items: center;
+}
+.sec-6 .in-sec6 .mywork-card .w-card{
+   width: 100%;
+   /* height: 25rem; */
 }
 footer{
 padding: 1.5rem 0rem 6rem 0rem;
@@ -814,4 +865,11 @@ padding: 1.5rem 0rem 6rem 0rem;
     .sec-4 .in-sec4 .mywork-card .w-card{
       width: 100%;
    }
+   .sec-5 .in-sec5 .mywork-card .w-card{
+   width: 100%;
+}
+.sec-6 .in-sec6 .mywork-card .w-card{
+   width: 100%;
+   /* height: 25rem; */
+}
 }

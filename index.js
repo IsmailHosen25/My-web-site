@@ -60,16 +60,16 @@ darkthembtn.addEventListener("click",()=>{
     skexedadded.innerHTML=` 
     <div class="allabout">
     <div class="one">
-        <h5>Web Develoment</h5>
-        <p>Frontend web develoment</p>
+        <h5>Core Backend:</h5>
+        <p>Spring Boot, Node.js, Express.js</p>
     </div>
     <div class="two">
-        <h5>Digital marketing</h5>
-        <p>social media markiting,content markiting and online advertising</p>
+        <h5>API & System Design:</h5>
+        <p>Building scalable REST APIs, implementing business logic, and designing secure, role-based systems.</p>
     </div>
     <div class="three">
-        <h5>Photography</h5>
-        <p>Macro photography, Travel photography</p>
+        <h5>Database Management:</h5>
+        <p>PostgreSQL, MySQL, MongoDB</p>
      </div>
  </div> 
     `})
@@ -80,13 +80,7 @@ darkthembtn.addEventListener("click",()=>{
         skexedadded.innerHTML=` 
         <div class="allabout">
         <div class="one">
-           <h5>2023-Current</h5>
-           <p>Web devlopment traning at WEB-D</p>
-        </div>
-        <div class="two">
-          <h5>2022 - 2023</h5>
-          <p>Worked for GMM</p>
-        </div>
+        <p>1+ years dedicated to building personal projects and academic projects, from concept to completion.</p>
        </div> 
         `})
         edu.addEventListener("click",()=>{
@@ -96,12 +90,8 @@ darkthembtn.addEventListener("click",()=>{
             skexedadded.innerHTML=` 
             <div class="allabout">
             <div class="one">
-                <h5>2023-Current</h5>
-                <p>Studing B.sc in cse at IUB</p>
-            </div>
-            <div class="two">
-                <h5>2023-Current</h5>
-                <p>Digital marketing at ABCL IT</p>
+                <h5>2022-Current</h5>
+                <p>Studing B.sc in Computer Science at Independent University, Bangladesh (IUB)</p>
             </div>
             </div> 
             `})
