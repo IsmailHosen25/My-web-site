@@ -58,20 +58,24 @@ darkthembtn.addEventListener("click",()=>{
     edu.classList.remove('active')
     skills.style.breakAfter.endsWith="80%"
     skexedadded.innerHTML=` 
-    <div class="allabout">
-    <div class="one">
-        <h5>Core Backend:</h5>
-        <p>Spring Boot, Node.js, Express.js</p>
-    </div>
-    <div class="two">
-        <h5>API & System Design:</h5>
-        <p>Building scalable REST APIs, implementing business logic, and designing secure, role-based systems.</p>
-    </div>
-    <div class="three">
-        <h5>Database Management:</h5>
-        <p>PostgreSQL, MySQL, MongoDB</p>
-     </div>
- </div> 
+                            <div class="allabout">
+                                 <div class="one">
+                                    <h5>Testing & QA:</h5>
+                                    <p>Manual Testing, API Testing (Postman), SDLC, STLC, Agile Project Management, Test Case Design, Bug Reporting</p>
+                                </div>
+                                <div class="two">
+                                    <h5>Core Backend:</h5>
+                                    <p>Spring Boot, Node.js, Express.js</p>
+                                </div>
+                                <div class="three">
+                                    <h5>API & System Design:</h5>
+                                    <p> Building scalable REST APIs, implementing business logic, and designing secure, role-based systems.</p>
+                                </div>
+                                <div class="four">
+                                    <h5>Database Management:</h5>
+                                    <p>PostgreSQL, MySQL, MongoDB</p>
+                                 </div>
+                             </div> 
     `})
     exp.addEventListener("click",()=>{
         exp.classList.toggle('active')
