@@ -59,15 +59,15 @@ darkthembtn.addEventListener("click",()=>{
     skills.style.breakAfter.endsWith="80%"
     skexedadded.innerHTML=` 
                             <div class="allabout">
-                                <div class="two">
+                                <div class="one">
                                     <h5>Core Backend:</h5>
-                                    <p>Spring Boot, Node.js, Express.js</p>
+                                    <p>Node.js, Express.js,pring Boot</p>
                                 </div>
-                                <div class="three">
+                                <div class="two">
                                     <h5>API & System Design:</h5>
                                     <p> Building scalable REST APIs, implementing business logic, and designing secure, role-based systems.</p>
                                 </div>
-                                <div class="four">
+                                <div class="three">
                                     <h5>Database Management:</h5>
                                     <p>PostgreSQL, MySQL, MongoDB</p>
                                  </div>
