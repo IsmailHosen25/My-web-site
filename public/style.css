@@ -61,17 +61,14 @@ header nav{
     height: 3rem;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-}
-header nav .name a{
-    font-size: 2rem;
-    text-decoration: none;
-    color: var(--darkandlight-color);
-    position: relative;
 }
 header nav .nav-manu{
-    margin-left: auto;
+      width: auto;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
 }
+
 header nav .nav-manu ul{
    display: flex;
    justify-content: space-between;
@@ -98,10 +95,11 @@ header nav .nav-manu ul li a{
     color: var(--para-color);
  }
  header nav .nav-icon{
+    width:100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap:1.5rem;
+    justify-content:space-evenly;
+    align-items:space-evenly;
+    gap:10rem;
  }
  header nav .nav-icon i{
     font-size: 2rem;
@@ -111,6 +109,9 @@ header nav .nav-manu ul li a{
     border: 1px solid var(--darkandlight-color);
     padding: 0.3rem 0.5rem;
  }
+  header nav .nav-icon #them-chinging{
+     margin-left: auto;
+  }
  header nav .nav-icon #nav-open{
     display: none;
     font-size: 2rem;
@@ -651,7 +652,40 @@ color: var(--para-color);
    outline: 1px solid var(--black-color);
    color: var(--para-color);
 }
-/* *********************************** section-5 End********************************************* */
+/* *********************************** section-7 End********************************************* */
+
+
+/* *********************************** section-8 start********************************************* */
+
+
+.sec-8{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+   padding: 2rem 0rem;
+   background-color: var(--bg-color);
+}
+.sec-8 .in-sec8 .heading{
+   font-size: 3rem;
+   padding: 1rem 0rem;
+   color: var(--para-color);
+}
+.sec-8 .in-sec8 .publications{
+   width: 100%;
+   display: flex;
+   justify-content:flex-start;
+   align-items:center;
+   flex-wrap: wrap;
+   gap:1rem;
+}
+
+/* *********************************** section-8 End********************************************* */
+
+
+
+
 /* *********************************** footer section start********************************************* */
 footer{
    padding: 1.5rem 0rem;
@@ -758,9 +792,12 @@ header nav .nav-manu ul li a i{
     bottom: 1.2rem;
     right: 9.5% ;
     display: block;
-    font-size: 2.5rem;
+    font-size: 2rem;
     cursor: pointer;
  }
+   header nav .nav-icon #them-chinging{
+     margin-left: 0;
+  }
  header nav .nav-icon  #nav-open{
    display: inline;
  }
@@ -841,6 +878,9 @@ padding: 1.5rem 0rem 6rem 0rem;
 }
 }
 @media screen  and (max-width:480px){
+   header nav .name{
+     display:visible;
+    }
     header nav .nav-manu ul{
         padding: 1.5rem;
         display: grid;
@@ -862,6 +902,10 @@ padding: 1.5rem 0rem 6rem 0rem;
      }
      .sec-2 .in-sec2 .image{
       width:100%;
+    }
+   .sec-2 .in-sec2 .content .about-para h2{
+      font-size: 3rem;
+
     }
     .sec-3 .in-sec3 .services .s-card{
       height: 26rem;

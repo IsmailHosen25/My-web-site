@@ -84,8 +84,12 @@ darkthembtn.addEventListener("click",()=>{
                 <p>Bashundhara Public School and College | Dhaka, Bangladesh</p>
             </div>
         <div class="one">
-                <h4>*️⃣Backend Development Intern| January 2026 - May 2026</h4>
+                <h4>*️⃣Backend Development Intern | January 2026 - May 2026</h4>
                 <p>Smart Software Ltd | Dhaka, Bangladesh</p>
+        </div>
+                <div class="one">
+                <h4>*️⃣3+ years of project experience</h4>
+                <p>Academic & Personal Projects | Dhaka, Bangladesh</p>
         </div>
        </div> 
         `})
