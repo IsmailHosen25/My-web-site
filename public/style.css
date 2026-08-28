@@ -537,33 +537,43 @@ header nav .nav-manu ul li a{
 
 /* *********************************** section-7 start********************************************* */
 
+/* *********************************** section-7 start********************************************* */
+
 .sec-7{
    width: 100%;
    background-color: var(--bg-color);
    display: flex;
    justify-content: center;
    align-items: center;
-   padding: 4rem 0rem;
+   padding: 5rem 0rem;
 }
 .sec-7 .in-sec7{
    display: flex;
    justify-content: space-between;
    align-items: flex-start;
    flex-wrap: wrap;
+   gap: 3rem;
 }
 .sec-7 .in-sec7 .left{
-   width: 48%;
+   width: 45%;
    display: flex;
    flex-direction: column;
-   justify-content: space-between;
+   justify-content: flex-start;
    align-items: flex-start;
-   gap:1.5rem;
+   gap:1.8rem;
 }
 .sec-7 .in-sec7 .left h1{
-   color: var(--para-color);
+   color: var(--header-color);
    font-size: 4rem;
 }
+.sec-7 .in-sec7 .left .contact-sub{
+   font-size: 1.5rem;
+   color: var(--dark-gray);
+   line-height: 2.2rem;
+   margin-top: -1rem;
+}
 .sec-7 .in-sec7 .left .icon{
+   width: 100%;
    font-size: 1.5rem;
    display: flex;
    flex-direction: column;
@@ -573,14 +583,34 @@ header nav .nav-manu ul li a{
    color: var(--para-color);
 }
 .sec-7 .in-sec7 .left .icon a{
+   width: 100%;
    text-decoration: none;
    color: var(--para-color);
+   display: flex;
+   align-items: center;
+   gap: 1.2rem;
+   background-color: var(--services-bg);
+   border: 1px solid var(--darkandlight-color);
+   border-radius: 10px;
+   padding: 1.2rem 1.5rem;
+   transition: all 0.3s linear;
+}
+.sec-7 .in-sec7 .left .icon a:hover{
+   transform: translateX(0.4rem);
+   background-color: var(--darkandlight-color);
+   color: #fff;
 }
 .sec-7 .in-sec7 .left .icon a i{
    color: #fff;
+   font-size: 1.6rem;
    padding: 0.8rem;
    background-color: var(--darkandlight-color);
    border-radius: 50%;
+   flex-shrink: 0;
+}
+.sec-7 .in-sec7 .left .icon a:hover i{
+   background-color: #fff;
+   color: var(--darkandlight-color);
 }
 .sec-7 .in-sec7 .left .social-media-icon{
    display: flex;
@@ -590,117 +620,151 @@ header nav .nav-manu ul li a{
 }
 .sec-7 .in-sec7 .left .social-media-icon a{
       color: var(--para-color);
-      font-size: 2.5rem;
-      padding: 0.5rem;
+      font-size: 2rem;
+      width: 4.2rem;
+      height: 4.2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid var(--darkandlight-color);
       transition: all 0.3s linear;
       border-radius: 50%;
 }
 .sec-7 .in-sec7 .left .social-media-icon a:hover{
-   color: var(--darkandlight-color);
+   color: #fff;
+   background-color: var(--darkandlight-color);
    transform: translateY(-3px);
 }
-.sec-7 .in-sec7 .right{
-   width: 48%;
-}
-
 .sec-7 .in-sec7 .left button{
-   padding: 1rem 3rem;
+   padding: 1.2rem 3rem;
    border: none;
-   border-radius: 5px;
+   border-radius: 2.5rem;
    background-color: var(--darkandlight-color);
-
+   margin-top: 0.5rem;
+   transition: all 0.3s linear;
+}
+.sec-7 .in-sec7 .left button:hover{
+   opacity: 0.85;
+   transform: translateY(-2px);
 }
 .sec-7 .in-sec7 .left button a{
    color: #fff;
-   font-size: 1.8rem;
+   font-size: 1.6rem;
    cursor: pointer;
    text-decoration: none;
+   display: flex;
+   align-items: center;
+   gap: 0.6rem;
+}
+
+.sec-7 .in-sec7 .right{
+   width: 48%;
 }
 .sec-7 .in-sec7 .right form{
    width: 100%;
    padding: 3rem;
-   background-color: var(--bg-color);
+   background-color: var(--services-bg);
    color: var(--para-color);
-   border: 2px solid var(--black-color);
-   border-radius: 5px;
+   border: 1px solid var(--darkandlight-color);
+   border-radius: 15px;
+   box-shadow: 0 0.8rem 2rem rgba(104, 88, 207, 0.15);
 }
 .sec-7 .in-sec7 .right form h2{
-font-size: 3rem;
-font-weight: 500;
-color: var(--para-color);
+   font-size: 2.6rem;
+   font-weight: bold;
+   color: var(--header-color);
+}
+.sec-7 .in-sec7 .right form .form-sub{
+   font-size: 1.4rem;
+   color: var(--dark-gray);
+   margin-top: 0.5rem;
+   margin-bottom: 1rem;
 }
 
                       /* *****************Input Box****************** */
  .sec-7 .in-sec7 .right form .input-box{
-    background-color: var(--bg-color);
-    margin-top: 1rem;
+    background-color: transparent;
+    margin-top: 2.2rem;
     width: 100%;
     position: relative;
 }
-.sec-7 .in-sec7 .right form input,textarea{
-   background-color: var(--bg-color);
+.sec-7 .in-sec7 .right form input,
+.sec-7 .in-sec7 .right form textarea{
+   background-color: transparent;
 }
-.sec-7 .in-sec7 .right form .input-box input , textarea{
+.sec-7 .in-sec7 .right form .input-box input,
+.sec-7 .in-sec7 .right form .input-box textarea{
    width: 100%;
-   padding: 0.5rem 0;
+   padding: 0.8rem 0.2rem;
    font-size: 1.5rem;
-   margin:1rem 0 ;
+   color: var(--para-color);
    border: none;
-   border-bottom:2px solid var(--black-color) ;
+   border-bottom: 2px solid var(--darkandlight-color);
    outline: none;
    resize: none;
+   font-family: inherit;
 }
 .sec-7 .in-sec7 .right form .input-box span{
    position: absolute;
-   left: 0;
-   padding: 0.5rem 0;
+   left: 0.2rem;
+   top: 0.8rem;
    font-size: 1.5rem;
-   margin:1rem 0 ;
    pointer-events: none;
-   transition: 0.5s;
-   color:#666;
+   transition: 0.3s ease;
+   color: var(--light-gray);
 }
 .sec-7 .in-sec7 .right form .input-box input:focus ~ span,
 .sec-7 .in-sec7 .right form .input-box input:valid ~ span{
    font-size: 1.2rem;
-   color:#e91963;
-   transform: translateY(-20px);
+   color: var(--darkandlight-color);
+   font-weight: bold;
+   transform: translateY(-1.8rem);
 }
 .sec-7 .in-sec7 .right form .input-box textarea:focus ~ span,
 .sec-7 .in-sec7 .right form .input-box textarea:valid ~ span{
    font-size: 1.2rem;
-    color:#e91963;
-    transform: translateY(-20px);
+   color: var(--darkandlight-color);
+   font-weight: bold;
+   transform: translateY(-1.8rem);
 }
 .sec-7 .in-sec7 .right form .submit-btn-box{
    display: flex;
    justify-content: center;
    align-items: center;
+   margin-top: 2.5rem;
 }
 
 
                       /* *****************Submit Button****************** */
 
-
-.sec-7 .in-sec7 .right form .input-box input[type="submit"]{
-   width: 90%;
+.sec-7 .in-sec7 .right form .submit-btn-box{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 2.5rem;
+}
+.sec-7 .in-sec7 .right form .submit-btn-box input[type="submit"]{
+   width: 100%;
+   appearance: none;
+   -webkit-appearance: none;
    background-color: var(--darkandlight-color);
-   color: var(--bg-color);
+   color: #fff;
    border: none;
+   outline: none;
+   border-radius: 2.5rem;
    cursor: pointer;
-   padding: 1rem;
+   padding: 1.2rem;
    font-size: 1.5rem;
+   font-weight: bold;
+   letter-spacing: 0.03rem;
    transition: all 0.3s linear;
 }
-.sec-7 .in-sec7 .right form .input-box input[type="submit"]:hover{
-   background-color: transparent;
-   outline: 1px solid var(--black-color);
-   color: var(--para-color);
+.sec-7 .in-sec7 .right form .submit-btn-box input[type="submit"]:hover{
+   opacity: 0.85;
+   transform: translateY(-2px);
 }
 /* *********************************** section-7 End********************************************* */
-
-
-/* *********************************** section-8 start********************************************* */
 
 
 /* *********************************** section-8 start********************************************* */
@@ -1066,10 +1130,15 @@ header nav .nav-manu ul li a i{
 }
 .sec-7 .in-sec7 .left{
    width: 100%;
-   margin-bottom: 2rem;
 }
 .sec-7 .in-sec7 .right{
    width:100%;
+}
+.sec-7 .in-sec7 .left h1{
+   font-size: 3.2rem;
+}
+.sec-7 .in-sec7 .right form{
+   padding: 2rem;
 }
 .sec-5 .in-sec5 .mywork-card .w-card{
    width: 70%;
