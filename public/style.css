@@ -329,37 +329,50 @@ header nav .nav-manu ul li a{
 }
 .sec-3 .in-sec3 .heading{
    font-size: 3rem;
-   padding: 1rem 0rem;
+   padding: 1rem 0rem 2rem 0rem;
    color: var(--para-color);
 }
 .sec-3 .in-sec3 .skills{
    width: 100%;
    display: flex;
    justify-content:flex-start;
-   align-items:center;
+   align-items:stretch;
    flex-wrap: wrap;
-   gap:1rem;
+   gap:2rem;
 }
 .sec-3 .in-sec3 .skills .s-card{
-   width: 10%;
-   height: 6rem;
-   box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
+   width: 12.5rem;
+   height: 12.5rem;
+   background-color: var(--services-bg);
+   border: 1px solid var(--darkandlight-color);
    border-radius: 10px;
-   padding: 2rem;
-   background-color:var(--services-bg) ;
-   transition: all 0.3s linear;
+   padding: 1.5rem;
    display: flex;
-   justify-content:center;
-   align-items:center;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 1rem;
+   transition: all 0.3s linear;
+}
+.sec-3 .in-sec3 .skills .s-card:hover{
+   transform: translateY(-0.5rem);
+   box-shadow: 0 0.8rem 1.5rem rgba(104, 88, 207, 0.2);
+   background-color: var(--darkandlight-color);
 }
 .sec-3 .in-sec3 .skills .s-card img{
    width:5rem;
+   height: 5rem;
+   object-fit: contain;
 }
-.sec-3 .in-sec3 .skills .javascript{
-   width:9rem;
+.sec-3 .in-sec3 .skills .s-card .s-name{
+   font-size: 1.3rem;
+   font-weight: bold;
+   color: var(--para-color);
+   text-align: center;
+   transition: all 0.3s linear;
 }
-.sec-3 .in-sec3 .skills .exceptionLogo{
-   width: 12%;
+.sec-3 .in-sec3 .skills .s-card:hover .s-name{
+   color: #fff;
 }
 /* *********************************** section-3 End********************************************* */
 
@@ -375,43 +388,75 @@ header nav .nav-manu ul li a{
 }
 .sec-4 .in-sec4 .heading{
    font-size: 3rem;
-   padding: 1rem 0rem;
+   padding: 1rem 0rem 2rem 0rem;
    color: var(--para-color);
 }
 .sec-4 .in-sec4 .mywork-card{
    width: 100%;
    display: flex;
-   justify-content: space-between;
-   align-items: center;
+   justify-content: flex-start;
+   align-items: stretch;
    flex-wrap: wrap;
-   gap:2rem;
+   gap:2.5rem;
 }
 .sec-4 .in-sec4 .mywork-card .w-card{
-   width: 32%;
-   border-radius: 10px;
-   border:var(--darkandlight-color) 2px solid;
+   width: 31%;
+   border-radius: 12px;
+   border: 1px solid var(--darkandlight-color);
+   background-color: var(--services-bg);
    position: relative;
    overflow: hidden;
-}
-.sec-4 .in-sec4 .mywork-card .w-card img{
-   width: 100%;
-   height: 22rem;
+   display: flex;
+   flex-direction: column;
    transition: all 0.3s linear;
 }
+.sec-4 .in-sec4 .mywork-card .w-card:hover{
+   transform: translateY(-0.6rem);
+   box-shadow: 0 1rem 2rem rgba(104, 88, 207, 0.25);
+}
+.sec-4 .in-sec4 .mywork-card .w-card .w-img{
+   width: 100%;
+   height: 20rem;
+   overflow: hidden;
+   background-color: var(--bg-color);
+}
+.sec-4 .in-sec4 .mywork-card .w-card .w-img img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   transition: all 0.4s ease;
+}
+.sec-4 .in-sec4 .mywork-card .w-card:hover .w-img img{
+   transform: scale(1.08);
+}
 .sec-4 .in-sec4 .mywork-card .w-card .w-about{
-   padding: 1rem;
+   padding: 1.5rem 1.8rem;
    display: flex;
    justify-content: space-between;
    align-items: center;
    font-size: 1.5rem;
    color: var(--para-color);
+   border-top: 1px solid rgba(104, 88, 207, 0.2);
+}
+.sec-4 .in-sec4 .mywork-card .w-card .w-about h3{
+   font-size: 1.8rem;
+   font-weight: bold;
 }
 .sec-4 .in-sec4 .mywork-card .w-card .w-about a{
-   border: 2px solid var(--para-color);
-   padding: 0.5rem 0.8rem;
-   border-radius: 5px;
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+   border: 1px solid var(--darkandlight-color);
+   padding: 0.6rem 1.2rem;
+   border-radius: 2rem;
    text-decoration: none;
+   font-size: 1.3rem;
    color: var(--para-color);
+   transition: all 0.3s linear;
+}
+.sec-4 .in-sec4 .mywork-card .w-card .w-about a:hover{
+   background-color: var(--darkandlight-color);
+   color: #fff;
 }
 
 /* *********************************** section-4 End********************************************* */
@@ -870,9 +915,9 @@ footer{
       height: 30rem;
       border-radius: 50%;
    }
-   .sec-3 .in-sec3 .services .s-card{
-      width: 32%;
-   }
+  .sec-3 .in-sec3 .skills{
+   justify-content: center;
+}
    .sec-5 .in-sec5 .mywork-card .w-card{
    width: 40%;
 }
@@ -897,19 +942,14 @@ footer{
       height: 28rem;
       border-radius: 50%;
    }
-   .sec-3 .in-sec3 .services{
-      justify-content: space-evenly;
-   }
-   .sec-3 .in-sec3 .services .s-card{
-      width: 48%;
-      margin-bottom: 1.5rem;
-   }
-   .sec-4 .in-sec4 .mywork-card{
-      justify-content: space-evenly;
+.sec-3 .in-sec3 .skills{
+   justify-content: center;
+}
+.sec-4 .in-sec4 .mywork-card{
+      justify-content: center;
    }
    .sec-4 .in-sec4 .mywork-card .w-card{
-      width: 48%;
-      margin-bottom: 1.5rem;
+      width: 46%;
    }
    .sec-5 .in-sec5 .mywork-card .w-card{
    width: 40%;}
@@ -1007,14 +1047,22 @@ header nav .nav-manu ul li a i{
  .sec-2 .in-sec2 .content{
    width: 100%;
  }
- .sec-3 .in-sec3 .services{
+.sec-3 .in-sec3 .skills{
    gap: 1.3rem;
- }
- .sec-3 .in-sec3 .services .s-card{
-   width: 100%;
+   justify-content: center;
+}
+.sec-3 .in-sec3 .skills .s-card{
+   width: 10rem;
+   height: 10rem;
+}
+.sec-4 .in-sec4 .mywork-card{
+   justify-content: center;
 }
 .sec-4 .in-sec4 .mywork-card .w-card{
-   width: 75%;
+   width: 80%;
+}
+.sec-4 .in-sec4 .mywork-card .w-card .w-img{
+   height: 18rem;
 }
 .sec-7 .in-sec7 .left{
    width: 100%;
@@ -1084,12 +1132,29 @@ padding: 1.5rem 0rem 6rem 0rem;
       font-size: 3rem;
 
     }
-    .sec-3 .in-sec3 .services .s-card{
-      height: 26rem;
-      gap: 1.3rem;
-    }
-    .sec-4 .in-sec4 .mywork-card .w-card{
+ .sec-3 .in-sec3 .skills .s-card{
+   width: 8.5rem;
+   height: 8.5rem;
+   padding: 1rem;
+}
+.sec-3 .in-sec3 .skills .s-card img{
+   width: 3.5rem;
+   height: 3.5rem;
+}
+.sec-3 .in-sec3 .skills .s-card .s-name{
+   font-size: 1.1rem;
+}
+.sec-4 .in-sec4 .mywork-card .w-card{
       width: 100%;
+   }
+   .sec-4 .in-sec4 .mywork-card .w-card .w-img{
+      height: 16rem;
+   }
+   .sec-4 .in-sec4 .mywork-card .w-card .w-about{
+      padding: 1.2rem 1.4rem;
+   }
+   .sec-4 .in-sec4 .mywork-card .w-card .w-about h3{
+      font-size: 1.6rem;
    }
    .sec-5 .in-sec5 .mywork-card .w-card{
    width: 100%;
